@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Amber Tariq",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": -160, "left": 20, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led2", "top": -160, "left": 80, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "led3", "top": -160, "left": 140, "attrs": { "color": "green" } },
+    { "type": "wokwi-led", "id": "led4", "top": -160, "left": 200, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led5", "top": -160, "left": 260, "attrs": { "color": "green" } },
+    { "type": "wokwi-resistor", "id": "r1", "top": -80, "left": 0, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r2", "top": -80, "left": 60, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r3", "top": -80, "left": 120, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r4", "top": -80, "left": 180, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-resistor", "id": "r5", "top": -80, "left": 240, "rotate": 90, "attrs": { "value": "220" } },
+    { "type": "wokwi-pushbutton", "id": "btn1", "top": -120, "left": 340, "attrs": { "color": "blue" } }
+  ],
+  "connections": [
+    [ "uno:13", "r1:1", "red", [] ],
+    [ "r1:2", "led1:A", "red", [] ],
+    [ "led1:C", "uno:GND.1", "black", [] ],
+    [ "uno:12", "r2:1", "gold", [] ],
+    [ "r2:2", "led2:A", "gold", [] ],
+    [ "led2:C", "uno:GND.1", "black", [] ],
+    [ "uno:11", "r3:1", "green", [] ],
+    [ "r3:2", "led3:A", "green", [] ],
+    [ "led3:C", "uno:GND.1", "black", [] ],
+    [ "uno:10", "r4:1", "red", [] ],
+    [ "r4:2", "led4:A", "red", [] ],
+    [ "led4:C", "uno:GND.1", "black", [] ],
+    [ "uno:9", "r5:1", "green", [] ],
+    [ "r5:2", "led5:A", "green", [] ],
+    [ "led5:C", "uno:GND.1", "black", [] ],
+    [ "btn1:1.l", "uno:2", "blue", [] ],
+    [ "btn1:2.l", "uno:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
