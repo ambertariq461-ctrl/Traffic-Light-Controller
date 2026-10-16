@@ -16,7 +16,7 @@ Car red 13, yellow 12, green 11 | Pedestrian red 10, green 9 | Button 2
 - `diagram.json`: the circuit wiring for Wokwi
 
 ## Run it
-Live simulation: (paste your Wokwi link here)
+Live simulation: https://wokwi.com/projects/478061510067087361
 
 ## Screenshots
 ![Circuit](WhatsApp%20Image%202026-10-16%20at%2021.33.07.jpeg)
